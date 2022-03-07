@@ -13,7 +13,9 @@ class SingleCompanyController extends Controller
         //index'es are important for the 'check'
         $names = [
             'Apple' => 'Apple',
-            'Samsung' => 'Samsung'
+            'Samsung' => 'Samsung',
+            'Tesla' => 'Tesla',
+            'MSI' => 'MSI'
         ];
         return view('companies.singleCompany',[
             'companyNames' => $names[$companyName] ?? 'Company ' . $companyName . ' not found',
